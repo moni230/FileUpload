@@ -43,7 +43,7 @@ public class Home {
             Sheet sheet = workbook.getSheetAt(0);
 
             String query = "INSERT INTO data(id, name, salary) VALUES(?,?,?)";
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/filedatatodb", "root", "Hope@2026");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DB_NAME", "YOUR_USERNAME", "YOUR_PASSWORD");
             PreparedStatement ps = con.prepareStatement(query);
 
                 DataFormatter data = new DataFormatter();
